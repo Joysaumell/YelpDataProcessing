@@ -1,0 +1,33 @@
+Yelp Data Processing and Visualization
+
+Welcome to my project where I venture into the expansive Yelp dataset, distilling insights and presenting them in visually appealing narratives.
+
+Overview
+
+This project centers around the methodical processing and visualization of data from Yelp. After a comprehensive processing phase, the dataset finds its presentation in vivid visualizations through Tableau Public.
+
+Data Source
+
+The dataset for this endeavor is sourced from Yelp's Dataset at https://www.yelp.com/dataset.
+The Yelp dataset is a subset of our businesses, reviews, and user data for use in connection with academic research.  Available as JSON files, use it to teach students about databases, to learn NLP, or for sample production data.
+
+Data Processing
+
+On json_to_csv_converter.py the project kicked off with the conversion of the voluminous Yelp dataset from JSON to CSV. SQLite then played the role of data custodian, with Python leveraging the sqlite3 library to facilitate intricate data queries and extraction.
+
+Popular_businesses.py spotlights the top 50 businesses brandishing an average rating north of 4.5 stars and amassing more than 100 reviews. This results in a selection of businesses that are both popular and highly regarded.
+Venturing deeper, this subset is integrated with the review and user tables, presenting a clearer picture of the user demographics gravitating towards these star businesses.
+Moreover, a LEFT JOIN operation with the tip table unveils any tips shared by these users for these prominent businesses, offering a richer dimension of user feedback beyond mere star ratings.
+
+On sentiment_analysis.py I am harnessing the simplicity and power of the textblob library, I have used Natural Language Processing (NLP) capabilities to decode the sentiment embedded in user reviews. The concepts of polarity and subjectivity were paramount here.
+Polarity: Measures the sentiment on a scale ranging from -1 (negative) to 1 (positive).
+Subjectivity: Quantifies the sentiment being objective (0) to subjective (1).
+This technical framework translates the textual user feedback into quantifiable metrics, paving the way for deeper analyses and visual narratives.
+
+Data Visualization in Tableau
+
+Post data processing, visual narratives were crafted using Tableau Public available on https://public.tableau.com/app/profile/joyce.saumell/viz/YelpDataset_16935977749000/PopularBusinessesFromYelp.
+Map of Popular Businesses: A geo-spatial narrative of top-performing businesses.
+Bar Charts: Showcasing top businesses based on distinct metrics, especially total reviews.
+Line Charts: Chronologically mapping review trends, revealing periods of heightened activity.
+
